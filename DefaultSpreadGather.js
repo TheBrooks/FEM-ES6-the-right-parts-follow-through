@@ -96,17 +96,19 @@ spread(...[1,2,3]) // prints `1 2 3`
   the `...` spread operator can be used in various useful situtation.
   for example array concatination is now much more clear
 */
+// array concatination
 let arr1 = [1,2]
 let arr2 = [4,5]
 let arr3 = [0, ...arr1, 3, ...arr2, 6]; // [ 0, 1, 2, 3, 4, 5, 6 ]
 
+// array destructuing
 let [aa, bb, ...cc] = arr3;
 // aa = 0
 // bb = 1
 // cc = [ 2, 3, 4, 5, 6 ]
 
 /* 
-  the `...` spread operator can also be used to spread objects into variables
+  the `...` spread operator can also be used to spread objects into variables during object destruction
 */
 let obj = { x: 1, y: '2', a: 'hello', b:'world'}
 let { x, y, ...z } = obj
